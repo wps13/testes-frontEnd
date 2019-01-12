@@ -12,25 +12,27 @@
 <body>
     <header class="header">
         <div class="top-bar">
-                <span class="nav-icons">
-                        <a href="https://twitter.com/">
-                            <img src="/public/Images/twitter-icon.jpg" alt="twitter" class="nav-icon-ig" />
-                        </a>
-                        <a href="https://www.instagram.com/">
-                            <img src="/public/Images/instagram-icon.png" alt="instagram" class="nav-icon-tw">
-                        </a>
-                        <a href="https://www.pinterest.com/">
-                            <img src="/public/Images/pinterest-icon.png" alt="pinterest" class="nav-icon-pr">
-                        </a>
-                        <a href="https://www.linkedin.com/">
-                            <img src="/public/Images/linkedin-icon.png" alt="linkedin" class="nav-icon-li">
-                        </a>
-                </span>
-                <span class="top-search">
-                    <input type="text" id="input-search" placeholder="Search Our Website..">
-                    <input type="text" id="input-small" placeholder="Search">
-                    <button id="btn-search">SEARCH</button>
-                </span>
+            <span class="nav-icons">
+                <!-- os icones são sem fundos,sendo o fundo feito com css
+                    mudando a cor no hover -->
+                <a href="https://twitter.com/">
+                    <img src="/public/Images/twitter-icon.jpg" alt="twitter" class="nav-icon-ig" />
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="/public/Images/instagram-icon.png" alt="instagram" class="nav-icon-tw">
+                </a>
+                <a href="https://www.pinterest.com/">
+                    <img src="/public/Images/pinterest-icon.png" alt="pinterest" class="nav-icon-pr">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="/public/Images/linkedin-icon.png" alt="linkedin" class="nav-icon-li">
+                </a>
+            </span>
+            <span class="top-search">
+                <input type="text" id="input-search" placeholder="Search Our Website..">
+                <input type="text" id="input-small" placeholder="Search">
+                <button id="btn-search">SEARCH</button>
+            </span>
 
         </div>
         <div class="bottom-bar">
@@ -53,11 +55,91 @@
                 </div>
                 <a>PORTFOLIO</a>
                 <a>GALLERY</a>
-            </s>
+                </s>
         </div>
     </header>
+    <section class="section-1">
+                
+        <ul class="carousel">
 
+            <!-- primeira página do carousel -->
+            <input type="radio" name="radio-btn" id="pg-1" checked>
+            <li class="carousel-container">
+                
+                <div class="carousel-item">
+                    <p class="big-text-carousel">Texto maior</p>
+                    <p class="small-text-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus varius tristique. Integer mauris odio, finibus vitae metus et, commodo accumsan neque. Duis at lacus efficitur, aliquam ante ut, aliquam justo. </p>
+                    <button class="btn-carousel">
+                        READ MORE &#8811
+                    </button>
+                </div>
 
+            </li>
+            <!-- segunda página do carousel -->
+            <input type="radio" name="radio-btn" id="pg-2">
+            <li class="carousel-container">
+                <div class="carousel-item">
+                    <p class="big-text-carousel">Texto maior 2</p>
+                    <p class="small-text-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        cursus varius tristique. Integer mauris odio, finibus vitae metus et, commodo accumsan neque.
+                        Duis at lacus efficitur, aliquam ante ut, aliquam justo. </p>
+                    <button class="btn-carousel">
+                        READ MORE &#8811
+                    </button>
+                </div>
+
+            </li>
+            <!-- terceira página do carousel -->
+            <input type="radio" name="radio-btn" id="pg-3">
+            <li class="carousel-container">
+                <div class="carousel-item">
+                    <p class="big-text-carousel">Texto maior 3</p>
+                    <p class="small-text-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        cursus varius tristique. Integer mauris odio, finibus vitae metus et, commodo accumsan neque.
+                        Duis
+                        at lacus efficitur, aliquam ante ut, aliquam justo. </p>
+                    <button class="btn-carousel">
+                        READ MORE &#8811
+                    </button>
+                </div>
+
+            </li>
+            <!-- quarta página do carousel -->
+            <input type="radio" name="radio-btn" id="pg-4">
+            <li class="carousel-container">
+                <div class="carousel-item">
+                    <p class="big-text-carousel">Texto maior 4</p>
+                    <p class="small-text-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        cursus varius tristique. Integer mauris odio, finibus vitae metus et, commodo accumsan neque.
+                        Duis at lacus efficitur, aliquam ante ut, aliquam justo. </p>
+                    <button class="btn-carousel">
+                        READ MORE &#8811
+                    </button>
+                </div>
+
+            </li>
+            <!-- quinta página do carousel -->
+            <input type="radio" name="radio-btn" id="pg-5">
+            <li class="carousel-container">
+                <div class="carousel-item">
+                    <p class="big-text-carousel">Texto maior 5</p>
+                    <p class="small-text-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        cursus varius tristique. Integer mauris odio, finibus vitae metus et, commodo accumsan neque.
+                        Duis at lacus efficitur, aliquam ante ut, aliquam justo. </p>
+                    <button class="btn-carousel">
+                        READ MORE &#8811
+                    </button>
+                </div>
+            </li>
+            <li class="nav-dots">
+                <label for="pg-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="pg-2" class="nav-dot" id="img-dot-2"></label>
+                <label for="pg-3" class="nav-dot" id="img-dot-3"></label>
+                <label for="pg-4" class="nav-dot" id="img-dot-4"></label>
+                <label for="pg-5" class="nav-dot" id="img-dot-5"></label>
+            </li>
+        </ul>
+    </section>
 
 </body>
 
