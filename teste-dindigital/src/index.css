@@ -251,4 +251,36 @@ input#pg-5:checked ~ .nav-dots label#img-dot-5 {
   margin: 3%;
   padding: 0; }
 
+.smallest-post-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0; }
+
+.smallest-post {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+
+.texts-container-smallest-post {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  word-wrap: break-word;
+  width: 70%;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 0;
+  padding: 0;
+  height: 80px; }
+
+.text-smallest-post {
+  margin: 0;
+  color: gray; }
+
+.title-smallest-post {
+  margin-top: 0;
+  color: #5d97f4; }
+
 /*# sourceMappingURL=index.css.map */
