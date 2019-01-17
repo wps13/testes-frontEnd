@@ -10,8 +10,13 @@
 
 ![Home](https://github.com/dindigital/test-front-2017/blob/master/layout/freshness.png)
 
+### Tempo Gasto
+
+Codando: 11h 19 min
+
 ### Stack
  - Html5
  - Scss
  - JavaScript
+
  
