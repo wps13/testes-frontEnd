@@ -16,8 +16,7 @@ class FormRegister extends Component {
   submitForm = e => {
     e.preventDefault();
     let state = this.state;
-    console.log(state);
-    addUser(state);
+    this.props.addUser(state);
   };
   render() {
     return (
