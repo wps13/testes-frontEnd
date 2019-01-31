@@ -1,10 +1,19 @@
 import React from 'react';
-import Form from './components/Form/Index';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Home from './components/Home/Index';
+import Login from './components/Login/Index';
+import SignUp from './components/SignUp/Index';
+
 const App = () => {
   return (
-    <div>
-      <Form />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Route exact path="/" root component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/signup" component={SignUp} />
+      </div>
+    </BrowserRouter>
   );
 };
 
