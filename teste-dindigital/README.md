@@ -5,18 +5,23 @@
 ## O teste
 
 ### O que deve ser feito ?
+
 1. Montagem da página home fornecido neste repositório.
 2. Montagem responsiva.
 
 ![Home](https://github.com/dindigital/test-front-2017/blob/master/layout/freshness.png)
 
-### Tempo Gasto
+### Tempo Gasto medido pelo Wakatime
 
-Codando: 11h 19 min
+12h 20 min
 
 ### Stack
- - Html5
- - Scss
- - JavaScript
 
- 
+- Html5
+- Scss
+
+### O que faltou fazer
+
+- Adicionar responsividade
+- Melhorar estrutura do carousel
+- Mudar estrutura dos icones
