@@ -5,6 +5,7 @@
     "prettier/prettier": ["error"],
     "react/prop-types": [0],
     "react/button-has-type": [0],
-    "react/destructuring-assignment": 0
+    "react/destructuring-assignment": 0,
+    "no-unneeded-ternary": 0
   }
 }

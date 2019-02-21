@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Input, Form, Card, Button } from 'antd';
 import 'antd/dist/antd.css';
 import { connect } from 'react-redux';
-import { login } from '../../store/redux/actions';
+import { login, onChangeInput, checkFields } from '../../store/redux/actions';
 
 const { Item } = Form;
 class Login extends Component {
@@ -12,14 +12,16 @@ class Login extends Component {
     this.state = {};
   }
 
-  handleInput = (field, value) => this.setState({ [field]: value });
-
   submit = e => {
     e.preventDefault();
-    this.props.login(this.state);
+    this.props.checkFields();
   };
 
   render() {
+    const { onChangeInput } = this.props;
+    const { fieldsOk } = this.props.loginData;
+    console.log(`fieldsOK:${fieldsOk}`);
+
     return (
       <div
         style={{
@@ -34,14 +36,14 @@ class Login extends Component {
             <Item>
               <Input
                 placeholder="Usuário"
-                onChange={e => this.handleInput('user', e.target.value)}
+                onChange={e => onChangeInput({ user: e.target.value })}
               />
             </Item>
             <Item>
               <Input
                 placeholder="Senha"
                 type="password"
-                onChange={e => this.handleInput('password', e.target.value)}
+                onChange={e => onChangeInput({ password: e.target.value })}
               />
             </Item>
             <Item>
@@ -57,7 +59,9 @@ class Login extends Component {
 const mapStateToProps = state => ({ loginData: state });
 
 const mapDispatchToProps = dispatch => ({
-  login: data => dispatch(login(data))
+  login: data => dispatch(login(data)),
+  onChangeInput: data => dispatch(onChangeInput(data)),
+  checkFields: () => dispatch(checkFields())
 });
 export default connect(
   mapStateToProps,
