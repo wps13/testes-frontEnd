@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { ADD_USER, ON_CHANGE_INPUT, CHECK_FIELDS } from './types';
+import { ADD_USER, ON_CHANGE_INPUT, CHECK_FIELDS, INITIAL_STATE } from './types';
 import Users from './index';
 
 it('should be a function', () => {
@@ -37,6 +37,13 @@ it('should save the input in redux', () => {
 it('should check if field is filled', () => {
   const before = { loginData: { user: 'Will', password: 123 } };
   const action = { type: CHECK_FIELDS };
-  const after = { fieldsOk: true };
+  const after = { loginData: { user: 'Will', password: 123 }, fieldsOk: true };
+  expect(Users(before, action)).to.be.deep.equal(after);
+});
+
+it('should initialize the component state', () => {
+  const before = {};
+  const action = { type: INITIAL_STATE };
+  const after = {};
   expect(Users(before, action)).to.be.deep.equal(after);
 });
