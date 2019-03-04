@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  background: #2f1e9e;
+  background: #594ea0;
   border: 1px #1f1756 solid;
+  color: white;
   &:hover {
-    background: #6c63a5;
+    background: #9188ce;
   }
 `;
 
