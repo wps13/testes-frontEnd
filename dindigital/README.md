@@ -15,7 +15,6 @@
 
 ![](https://github.com/wps13/testes-frontEnd/blob/master/dindigital/public/Images/home.png)
 
-
 ### Tempo Gasto medido pelo Wakatime
 
 12h 20 min
@@ -25,19 +24,18 @@
 - Html5
 - Scss
 
-### Como visualizar 
+### Como visualizar
 
-   Install live-server
-   
-   ` npm install -g live-server `
-  
-  Run insider this folder
-  
- ` live-server `
+Instalar live-server
+
+`npm install -g live-server`
+
+Rodar dentro dessa pasta
+
+`live-server`
 
 ### O que faltou fazer
 
 - Adicionar responsividade
 - Melhorar estrutura do carousel
 - Mudar estrutura dos icones
-
