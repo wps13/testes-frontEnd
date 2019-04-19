@@ -8,19 +8,26 @@ class FormSimulation extends Component {
   render() {
     return (
       <OuterBox>
-        <p>Ciclic</p>
-        <p>Simulador</p>
+        <p
+          style={{
+            fontWeight: "bold",
+            fontSize: "20px"
+          }}
+        >
+          Ciclic
+        </p>
+        <p style={{ fontWeight: "bold", fontSize: "20px" }}>Simulador</p>
         <Box>
           <FormItem>
-            <span>Nome</span>
+            <span>Nome:</span>
             <input type="text" />
           </FormItem>
           <FormItem>
-            <span>Mensalidade</span>
+            <span>Mensalidade:</span>
             <input type="number" />
           </FormItem>
           <FormItem>
-            <span>Tempo</span>
+            <span>Tempo:</span>
             <select>
               <option>1 ano</option>
               <option>2 anos</option>
