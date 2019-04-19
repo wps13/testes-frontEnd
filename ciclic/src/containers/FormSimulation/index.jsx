@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
+import { Redirect } from "react-router-dom";
+
 import Button from "../../components/Button";
 import Box from "../../components/Box";
 import FormItem from "../../components/FormItem";
@@ -11,8 +13,17 @@ import OuterBox from "../../components/OuterBox";
 import { onChangeData, simulationRequest } from "../../store/ducks/simulation";
 
 class FormSimulation extends Component {
+  sendsimulation = () => {
+    const { simulationRequest, formData } = this.props;
+    const { monthlyCharge, period } = formData;
+    simulationRequest({ monthlyCharge, period });
+  };
   render() {
-    const { onChangeData, simulationRequest } = this.props;
+    const { onChangeData, futureValue } = this.props;
+    if (futureValue !== undefined) {
+      return <Redirect to="/result" />;
+    }
+
     return (
       <OuterBox>
         <p
@@ -36,7 +47,7 @@ class FormSimulation extends Component {
             <span>Mensalidade:</span>
             <input
               type="number"
-              onChange={e => onChangeData({ montlyCharge: e.target.value })}
+              onChange={e => onChangeData({ monthlyCharge: e.target.value })}
             />
           </FormItem>
           <FormItem>
@@ -47,17 +58,19 @@ class FormSimulation extends Component {
               <option value="3">3 anos</option>
             </select>
           </FormItem>
-          <Button click={simulationRequest}>Simular</Button>
+          <Button onClick={this.sendsimulation}>Simular</Button>
         </Box>
       </OuterBox>
     );
   }
 }
 
+const mapStateToProps = state => ({ ...state });
+
 const mapDispatchToProps = dispatch =>
   bindActionCreators({ onChangeData, simulationRequest }, dispatch);
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(FormSimulation);
