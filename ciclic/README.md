@@ -1,4 +1,4 @@
-# Teste Ciclik
+# Teste Ciclic
 
 ### Link para o teste: https://github.com/ciclic/test-frontend
 
