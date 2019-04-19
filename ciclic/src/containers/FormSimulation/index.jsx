@@ -1,11 +1,18 @@
 import React, { Component } from "react";
+
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+
 import Button from "../../components/Button";
 import Box from "../../components/Box";
 import FormItem from "../../components/FormItem";
 import OuterBox from "../../components/OuterBox";
 
+import { onChangeData, simulationRequest } from "../../store/ducks/simulation";
+
 class FormSimulation extends Component {
   render() {
+    const { onChangeData, simulationRequest } = this.props;
     return (
       <OuterBox>
         <p
@@ -20,25 +27,37 @@ class FormSimulation extends Component {
         <Box>
           <FormItem>
             <span>Nome:</span>
-            <input type="text" />
+            <input
+              type="text"
+              onChange={e => onChangeData({ name: e.target.value })}
+            />
           </FormItem>
           <FormItem>
             <span>Mensalidade:</span>
-            <input type="number" />
+            <input
+              type="number"
+              onChange={e => onChangeData({ montlyCharge: e.target.value })}
+            />
           </FormItem>
           <FormItem>
             <span>Tempo:</span>
-            <select>
-              <option>1 ano</option>
-              <option>2 anos</option>
-              <option>3 anos</option>
+            <select onChange={e => onChangeData({ period: e.target.value })}>
+              <option value="1">1 ano</option>
+              <option value="2">2 anos</option>
+              <option value="3">3 anos</option>
             </select>
           </FormItem>
-          <Button>Simular</Button>
+          <Button click={simulationRequest}>Simular</Button>
         </Box>
       </OuterBox>
     );
   }
 }
 
-export default FormSimulation;
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ onChangeData, simulationRequest }, dispatch);
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(FormSimulation);
