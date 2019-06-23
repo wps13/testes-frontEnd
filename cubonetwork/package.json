@@ -21,7 +21,9 @@
     "test:coverage": "jest --coverage --colors",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/**/**.js",
-    "lint:fix": "eslint ./src/**/**.js --fix"
+    "lint:fix": "eslint ./src/**/**.js --fix",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +42,10 @@
     "@babel/plugin-transform-runtime": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.0",
     "babel-loader": "^8.0.5",
