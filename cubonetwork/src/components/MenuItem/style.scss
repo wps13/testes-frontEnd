@@ -1,0 +1,19 @@
+$bg-color-hover: #e3e6ea;
+$bg-color-selected: #f47c27;
+$color-active: #fff;
+
+.menuItem {
+  width: 60px;
+  padding: 1% 5%;
+  border-radius: 3px;
+  text-align: center;
+
+  &:hover {
+    background: $bg-color-hover;
+  }
+  &:active,
+  &:visited {
+    background: $bg-color-selected;
+    color: $color-active;
+  }
+}
