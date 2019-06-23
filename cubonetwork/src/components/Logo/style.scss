@@ -1,0 +1,29 @@
+$bg-company: #1a5493;
+$color-company: #fff40c;
+
+.logo-header {
+  max-width: 150px;
+  height: 150px;
+  .logo-header-product {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px 10px;
+  }
+  .logo-header-info-company {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .logo-header-info {
+      font-size: 12px;
+    }
+    .logo-header-company {
+      background: $bg-company;
+      color: $color-company;
+      padding-top: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+  }
+}
