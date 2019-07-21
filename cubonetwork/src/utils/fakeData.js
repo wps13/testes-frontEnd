@@ -1,3 +1,4 @@
+import React from "react";
 import { Piggy, Accounting, IncreaseMoney, Creditcard } from "../utils/icons";
 
 export const services = () => [
