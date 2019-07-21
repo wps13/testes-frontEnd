@@ -1,0 +1,21 @@
+.service {
+  display: grid;
+  margin: 1% 5%;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  .service-icon {
+    margin: 3% 2%;
+    max-height: 50px;
+    max-width: 50px;
+  }
+  .service-text {
+    font-family: monospace;
+    margin: 1% 5%;
+    font-size: 0.8rem;
+    .service-text-title {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 4200;
+    }
+  }
+}
