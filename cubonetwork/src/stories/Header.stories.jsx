@@ -15,4 +15,3 @@ storiesOf("Header", module)
   ))
   .add("Logo", () => <Logo />)
   .add("Menu bar", () => <MenuBar />);
-s;
