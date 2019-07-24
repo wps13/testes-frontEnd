@@ -1,0 +1,23 @@
+$white-color: #fff;
+$blue-color: #03adfc;
+
+.sign-up {
+  color: $white-color;
+  background-color: $blue-color;
+  text-align: center;
+  padding: 2rem 6rem;
+  & h1 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .sign-up-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0.5fr;
+    & button {
+      text-transform: uppercase;
+      background-color: $blue-color;
+      color: $white-color;
+      border: 2px solid $white-color;
+    }
+  }
+}
