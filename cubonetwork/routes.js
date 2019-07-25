@@ -1,16 +1,14 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
+import Home from "./src/containers/Home";
+
 // eslint-disable-next-line import/no-cycle
 
 const Routes = () => (
   <HashRouter>
     <Switch>
-      <Route
-        path="/"
-        root
-        render={() => <h1 style={{ textAlign: "center" }}>Boilerplate root</h1>}
-      />
+      <Route path="/" root component={Home} />
     </Switch>
   </HashRouter>
 );
