@@ -1,5 +1,21 @@
-header {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 80px;
+.home {
+  .home-header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 80px;
+  }
+  .home-services {
+    .home-services-container {
+      .home-services-container-title {
+        text-align: center;
+      }
+    }
+  }
+  .home-steps {
+    .home-steps-container {
+      .home-steps-container-title {
+        text-align: center;
+      }
+    }
+  }
 }

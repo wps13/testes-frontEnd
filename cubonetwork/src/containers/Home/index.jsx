@@ -10,34 +10,50 @@ import "./style.scss";
 
 const Home = () => {
   return (
-    <div>
-      <header>
+    <div className="home">
+      <header className="home-header">
         <Logo />
         <MenuBar />
       </header>
-      <main>
+      <main className="home-main">
         <p>Carrossel a construir</p>
       </main>
-      <section>
-        <h2>Serviços</h2>
-        <p>Alguma descrição aqui</p>
-        <ServicesArea />
+      <section className="home-services">
+        <div className="home-services-container">
+          <div className="home-services-container-title">
+            <h2>Serviços</h2>
+            <p>Alguma descrição aqui</p>
+          </div>
+
+          <ServicesArea />
+        </div>
       </section>
-      <section>
-        <p>sobre nós </p>
+      <section className="home-about">
+        <div className="home-about-container">
+          <p>sobre nós </p>
+        </div>
       </section>
-      <section>
-        <h2>passos </h2>
-        <p>alguma desc</p>
-        <ProcessArea />
+      <section className="home-steps">
+        <div className="home-steps-container">
+          <div className="home-steps-container-title">
+            <h2>passos </h2>
+            <p>alguma desc</p>
+          </div>
+
+          <ProcessArea />
+        </div>
       </section>
-      <section>
+      <section className="home-signup">
         <SignUpForm />
       </section>
-      <section>
-        <p>Gráfico</p>
+      <section className="home-graph">
+        <div className="home-graph-container">
+          <p>Gráfico</p>
+        </div>
       </section>
-      <footer>redes socias e copyright</footer>
+      <footer className="home-footer">
+        <div className="home-footer-container">redes socias e copyright</div>
+      </footer>
     </div>
   );
 };
