@@ -1,7 +1,7 @@
 .home {
   .home-header {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr 3fr 2fr 1fr;
     grid-template-rows: 80px;
   }
   .home-services {
@@ -11,10 +11,20 @@
       }
     }
   }
+
   .home-steps {
     .home-steps-container {
       .home-steps-container-title {
         text-align: center;
+      }
+    }
+  }
+
+  .home-footer {
+    .home-footer-container {
+      .home-footer-container-sns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
       }
     }
   }

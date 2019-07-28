@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Logo from "../../components/Logo";
 import MenuBar from "../../components/MenuBar";
 import ServicesArea from "../../components/ServicesArea";
 import ProcessArea from "../../components/ProcessArea";
 import SignUpForm from "../../components/SignUpForm";
+import Adress from "../../components/Adress";
+import SNSArea from "../../components/SNSArea";
+import Copyright from "../../components/Copyright";
 
 import "./style.scss";
 
 const Home = () => {
+  const [inputs, onChangeInput] = useState({});
+  const handleInput = e => {
+    onChangeInput(inputs => ({ ...inputs, [e.target.name]: e.target.value }));
+  };
+  const sendData = () => inputs;
+
   return (
     <div className="home">
       <header className="home-header">
@@ -16,7 +25,7 @@ const Home = () => {
         <MenuBar />
       </header>
       <main className="home-main">
-        <p>Carrossel a construir</p>
+        <h2 style={{ textAlign: "center" }}>Carrossel a construir</h2>
       </main>
       <section className="home-services">
         <div className="home-services-container">
@@ -24,19 +33,18 @@ const Home = () => {
             <h2>Serviços</h2>
             <p>Alguma descrição aqui</p>
           </div>
-
           <ServicesArea />
         </div>
       </section>
       <section className="home-about">
         <div className="home-about-container">
-          <p>sobre nós </p>
+          <h2>sobre nós </h2>
         </div>
       </section>
       <section className="home-steps">
         <div className="home-steps-container">
           <div className="home-steps-container-title">
-            <h2>passos </h2>
+            <h2>Como funciona?</h2>
             <p>alguma desc</p>
           </div>
 
@@ -44,15 +52,22 @@ const Home = () => {
         </div>
       </section>
       <section className="home-signup">
-        <SignUpForm />
+        <SignUpForm inputChange={handleInput} btnClick={sendData} />
       </section>
       <section className="home-graph">
         <div className="home-graph-container">
+          <h2>Dados</h2>
           <p>Gráfico</p>
         </div>
       </section>
       <footer className="home-footer">
-        <div className="home-footer-container">redes socias e copyright</div>
+        <div className="home-footer-container">
+          <div className="home-footer-container-sns">
+            <Adress />
+            <SNSArea />
+          </div>
+          <Copyright />
+        </div>
       </footer>
     </div>
   );
