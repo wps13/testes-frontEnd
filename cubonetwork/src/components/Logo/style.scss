@@ -4,6 +4,7 @@ $color-company: #fff40c;
 .logo-header {
   max-width: 150px;
   height: 150px;
+  grid-column: 2 / 3;
   .logo-header-product {
     font-weight: bold;
     font-size: 40px;
