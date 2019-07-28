@@ -1,13 +1,50 @@
 .form-input {
   border-radius: 5px;
-  padding: 0.5rem;
-  input {
-    line-height: 0.5rem;
+  color: #abb3c2;
+  .form-input {
     font-size: 0.8rem;
-
+    z-index: 0;
+    padding: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-origin: content-box;
+    background-position: left;
+    text-indent: 1.5rem;
+    line-height: 0.8rem;
     &:focus,
     &:active {
-      outline: #03adfc;
+      outline: none;
+
+      & + .placeholder {
+        visibility: hidden;
+      }
     }
+    & + .placeholder {
+      position: relative;
+      z-index: 1;
+      color: #abb3c2;
+      vertical-align: middle;
+      left: -2.5rem;
+      font-size: 0.8rem;
+      top: -1.6rem;
+    }
+    &.email {
+      background-image: url("../../../assets/images/close-envelope.svg");
+    }
+    &.tel {
+      background-image: url("../../../assets/images/telephone.svg");
+    }
+    &.text {
+      background-image: url("../../../assets/images/user.svg");
+    }
+  }
+  &.first {
+    grid-column: 2/ 3;
+  }
+  &.second {
+    grid-column: 3/4;
+  }
+  &.third {
+    grid-column: 4/5;
   }
 }

@@ -2,10 +2,19 @@ import React from "react";
 
 import "./style.scss";
 
-const FormInput = ({ title, change, dataType }) => {
+const FormInput = ({ title, change, dataType, posClass }) => {
   return (
-    <div className="form-input">
-      <input placeholder={title} onChange={e => change(e)} type={dataType} />
+    <div className={"form-input " + posClass}>
+      <input
+        onChange={e => {
+          e.persist();
+          change(e);
+        }}
+        type={dataType}
+        className={"form-input " + dataType}
+        name={title}
+      />
+      <span className="placeholder">{title}</span>
     </div>
   );
 };
