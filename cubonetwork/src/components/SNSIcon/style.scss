@@ -1,0 +1,50 @@
+$yt-bg: #c4302b;
+$tw-bg: #38A1F3;
+$fb-bg: #3b5998;
+$gp-bg: #DD4B39;
+
+.icon-sns {
+  border-radius: 30px;
+  width: 3rem;
+  height: 3rem ;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  &.youtube {
+    background-image: url("../../../assets/images/youtube-icon-white-transparent-15.jpg");
+    background-position: .7rem .5rem;;
+    background-color: $yt-bg;
+    &:hover{
+      background-color: lighten($color: $yt-bg, $amount: 10);
+      cursor: pointer;
+    }
+  }
+  &.twitter {
+    background-image: url('../../../assets/images/twitter.png');
+    background-color: $tw-bg;
+    background-position: .4rem .4rem;
+    background-size: 80%;
+    &:hover{
+      background-color: lighten($color: $tw-bg, $amount: 10);
+      cursor: pointer;
+    }
+  }
+  &.facebook {
+    background-image: url('../../../assets/images/facebook.png');
+    background-color: $fb-bg;
+    background-size: 70%;
+    background-position: .4rem .4rem;
+    &:hover{
+      background-color: lighten($color: $fb-bg, $amount: 10);
+      cursor: pointer;
+    }
+  }
+  &.google-plus {
+    background-image: url('../../../assets/images/google-plus.png');
+    background-color: $gp-bg;
+    background-size: contain;
+    &:hover{
+      background-color: lighten($color: $gp-bg, $amount: 10);
+      cursor: pointer;
+    }
+  }
+}
