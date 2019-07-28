@@ -1,0 +1,11 @@
+.adress {
+  grid-column: 2 / 3;
+  .adress-title {
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .adress-street,
+  .adress-others {
+    margin: 0;
+  }
+}
