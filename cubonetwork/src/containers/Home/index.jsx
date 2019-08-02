@@ -9,8 +9,24 @@ import Adress from "../../components/Adress";
 import SNSArea from "../../components/SNSArea";
 import Copyright from "../../components/Copyright";
 import About from "../../components/About";
+import Table from "../../components/Table";
 
 import "./style.scss";
+
+const fakeData = [
+  {
+    id: 1,
+    name: "Joao",
+    lastName: "Silva",
+    value: 9000
+  },
+  {
+    id: 2,
+    name: "Joao",
+    lastName: "Silva",
+    value: 9000
+  }
+];
 
 const Home = () => {
   const [inputs, onChangeInput] = useState({});
@@ -59,6 +75,7 @@ const Home = () => {
         <div className="home-graph-container">
           <h2>Dados</h2>
           <p>Gráfico</p>
+          <Table data={fakeData} />
         </div>
       </section>
       <footer className="home-footer">
