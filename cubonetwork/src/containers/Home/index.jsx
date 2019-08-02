@@ -8,6 +8,7 @@ import SignUpForm from "../../components/SignUpForm";
 import Adress from "../../components/Adress";
 import SNSArea from "../../components/SNSArea";
 import Copyright from "../../components/Copyright";
+import About from "../../components/About";
 
 import "./style.scss";
 
@@ -38,7 +39,7 @@ const Home = () => {
       </section>
       <section className="home-about">
         <div className="home-about-container">
-          <h2>sobre nós </h2>
+          <About />
         </div>
       </section>
       <section className="home-steps">
