@@ -1,0 +1,35 @@
+$font-color: #fff;
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 500px;
+  max-width: 100%;
+  overflow-y: hidden;
+  & .about-img {
+    background-image: url("../../../assets/images/about-idea.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.1) translate(3%, -17%);
+    height: 100%;
+    background-position: right top;
+    position: relative;
+    top: 15%;
+    background-origin: content-box;
+  }
+  .about-side {
+    background-color: #ebbd34;
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    .about-side__title {
+      text-transform: uppercase;
+      color: $font-color;
+    }
+    .about-side__description {
+      color: $font-color;
+      font-size: 0.8rem;
+      font-weight: 200;
+    }
+  }
+}
