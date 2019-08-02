@@ -1,0 +1,17 @@
+.table-row {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+  .table-row__id,
+  .table-row__name,
+  .table-row__lastName,
+  .table-row__value {
+    border: 1px solid gray;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+  &.header {
+    font-weight: 600;
+  }
+}
