@@ -1,0 +1,15 @@
+.arrow-carosel {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.5rem solid;
+  border-color: transparent #fff #fff transparent;
+  display: inline-block;
+  &.right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  &.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
