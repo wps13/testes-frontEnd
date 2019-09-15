@@ -1,0 +1,18 @@
+.home-graph-container {
+  & .home-graph__title {
+    text-align: center;
+    & h2 {
+      text-transform: capitalize;
+    }
+  }
+  & .home-graph__data {
+    display: grid;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    & :nth-child(1) {
+      grid-column: 2 / 3;
+    }
+    & :nth-child(2) {
+      grid-column: 4 / 5;
+    }
+  }
+}
