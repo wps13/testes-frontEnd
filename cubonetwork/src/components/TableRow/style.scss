@@ -14,4 +14,17 @@
   &.header {
     font-weight: 600;
   }
+  .table-row__id {
+    grid-column: 1 / 2;
+    min-width: 1em;
+  }
+  .table-row__name {
+    grid-column: 2 / 3;
+  }
+  .table-row__lastName {
+    grid-column: 3 / 4;
+  }
+  .table-row__value {
+    grid-column: 4 / 5;
+  }
 }
