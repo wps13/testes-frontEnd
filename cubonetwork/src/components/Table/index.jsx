@@ -2,9 +2,11 @@ import React from "react";
 
 import TableRow from "../TableRow";
 
+import "./style.scss";
+
 const Table = ({ data }) => {
   return (
-    <div>
+    <section className="home-table">
       <TableRow
         id=""
         name="Nome"
@@ -20,7 +22,7 @@ const Table = ({ data }) => {
           value={userData.value}
         />
       ))}
-    </div>
+    </section>
   );
 };
 
