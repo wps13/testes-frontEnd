@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import SignUp from "../components/SignUpForm";
+import SignUp from "../components/SignUpSection";
 import FormInput from "../components/FormInput";
 
 storiesOf("Sign Up", module)
