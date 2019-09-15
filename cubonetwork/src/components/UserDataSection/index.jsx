@@ -17,7 +17,9 @@ const UserDataSection = ({ data }) => {
       </div>
       <div className="home-graph__data">
         <Table data={data} />
-        <UserGraph userData={data} />
+        <div className="home-graph__graph">
+          <UserGraph userData={data} />
+        </div>
       </div>
     </div>
   );
