@@ -27,15 +27,17 @@ const UserGraph = ({ userData }) => {
     series: [
       {
         type: "pie",
-        radius: "65%",
+        radius: ["40%", "70%"],
         center: [" 50%", "50%"],
-        selectedMode: "single",
         data: graphData,
         itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: "rgba(0, 0, 0, 0.5)"
+          normal: {
+            label: {
+              show: false
+            },
+            labelLine: {
+              show: false
+            }
           }
         }
       }
