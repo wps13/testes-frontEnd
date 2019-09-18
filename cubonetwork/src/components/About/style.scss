@@ -32,4 +32,19 @@ $font-color: #fff;
       font-weight: 400;
     }
   }
+  .about-graph__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    height: 200px;
+    & div {
+      min-height: 100px;
+      min-width: 100px;
+      & p {
+        position: relative;
+        top: -6rem;
+        text-align: center;
+      }
+    }
+  }
 }

@@ -1,11 +1,13 @@
 import React from "react";
 
+import AboutGraph from "../AboutGraph";
+
 import "./style.scss";
 
 const About = () => {
   return (
     <div className="about">
-      <div className="about-img"></div>
+      <div className="about-img" />
       <div className="about-side">
         <h1 className="about-side__title">sobre nós</h1>
         <p className="about-side__description">
@@ -16,9 +18,20 @@ const About = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.{" "}
         </p>
-        <p>Graph 1</p>
-        <p>Graph 2</p>
-        <p>Graph 3</p>
+        <div className="about-graph__container">
+          <div>
+            <AboutGraph value={20} type="percentage" />
+            <p>percentage</p>
+          </div>
+          <div>
+            <AboutGraph value={400} type="money" />
+            <p>Money</p>
+          </div>
+          <div>
+            <AboutGraph value={7} type="time" />
+            <p>Hour</p>
+          </div>
+        </div>
       </div>
     </div>
   );
