@@ -2,16 +2,13 @@ import React from "react";
 
 import ReactEcharts from "echarts-for-react";
 
+import { formatData } from "../../utils/helpFunctions";
+
 const UserGraph = ({ userData }) => {
   let legendNames = [],
     graphData = [];
-  userData.forEach(user => {
-    legendNames.push(`${user.name} ${user.lastName}`);
-    graphData.push({
-      name: `${user.name} ${user.lastName}`,
-      value: user.value
-    });
-  });
+
+  [legendNames, graphData] = formatData(userData);
 
   let options = {
     tooltip: {
