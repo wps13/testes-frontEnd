@@ -2,6 +2,8 @@
 
 ### **What was done**
 
+![](https://github.com/wps13/testes-frontEnd/blob/master/cubonetwork/assets/images/homepage.png)
+
 ## **What was used**
 
 - React
