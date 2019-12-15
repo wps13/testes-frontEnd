@@ -1,6 +1,6 @@
 .form-input {
   border-radius: 5px;
-  color: #abb3c2;
+  color: #403c3c;
   .form-input {
     font-size: 0.8rem;
     z-index: 0;
@@ -14,18 +14,6 @@
     &:focus,
     &:active {
       outline: none;
-
-      & + .placeholder {
-        visibility: hidden;
-      }
-    }
-    & + .placeholder {
-      position: relative;
-      z-index: 1;
-      color: #abb3c2;
-      vertical-align: middle;
-      left: -11rem;
-      font-size: 0.8rem;
     }
     &.email {
       background-image: url("../../../assets/images/close-envelope.svg");

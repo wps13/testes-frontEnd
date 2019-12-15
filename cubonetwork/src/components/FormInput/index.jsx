@@ -13,8 +13,8 @@ const FormInput = ({ title, change, dataType, posClass }) => {
         type={dataType}
         className={"form-input " + dataType}
         name={title}
+        placeholder={title}
       />
-      <span className="placeholder">{title}</span>
     </div>
   );
 };
