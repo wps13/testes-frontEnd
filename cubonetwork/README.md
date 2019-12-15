@@ -1,15 +1,12 @@
-# Boilerplate
+# Cubo Network
 
-This boilerplate contains webpack, integrated with the devServer, with configuration files for development and production modes.
+### **What was done**
 
-### It's configured to use:
+## **What was used**
 
-- ReactJS
-- Jest
+- React
+- Storybook
 - Sass
-- Eslint
-- Prettier
-- EditorConfig
 
 ### **How to use**
 
@@ -23,10 +20,6 @@ Start the aplication
 
 `yarn start`
 
-Initialize jest
+Initialize storybook
 
-`yarn test`
-
-Generate the build
-
-`yarn build`
+`yarn storybook`
