@@ -1,6 +1,6 @@
 # Teste Ciclic
 
-### Link para o teste: https://github.com/ciclic/test-frontend
+### Link para o repositório do teste: https://github.com/ciclic/test-frontend
 
 ### O que foi usado:
 
@@ -11,6 +11,8 @@
 - React-Router
 
 ### O que foi feito
+
+Simulador de investimento com juros compostos, perguntando ao usuário quando deseja-se juntar por mês e por quanto tempo, com esses dados usou-se uma api externa para descobrir o valor resultante.
 
 Página inicial
 
