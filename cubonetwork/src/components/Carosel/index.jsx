@@ -1,33 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
+
+import Slider from "react-slick";
 
 import "./style.scss";
 
 import { carouselData } from "../../utils/fakeData";
 import CaroselItem from "../CaroselItem";
 
-const Carosel = () => {
-  let [actualSlide, updateActualSlide] = useState(0);
-  let [newSlide, updateNewSlide] = useState(0);
-  return (
-    <div className="carousel__container">
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const settings = {
+  arrows: true
+};
+
+const Carosel = () => (
+  <div className="carousel__container">
+    <Slider {...settings}>
       {carouselData.map(item => (
         <CaroselItem
           title={item.title}
           text={item.text}
           order={item.order}
-          moveLeft={() => {
-            updateNewSlide((newSlide = actualSlide + 1));
-            updateActualSlide((actualSlide = newSlide));
-          }}
-          moveRight={() => {
-            updateNewSlide((newSlide = actualSlide - 1));
-            updateActualSlide((actualSlide = newSlide));
-          }}
           id={item.id}
         />
       ))}
-    </div>
-  );
-};
+    </Slider>
+  </div>
+);
 
 export default Carosel;

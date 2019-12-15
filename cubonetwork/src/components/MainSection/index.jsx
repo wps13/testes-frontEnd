@@ -1,11 +1,12 @@
 import React from "react";
 
 import "./style.scss";
+import Carosel from "../Carosel";
 
 const MainSection = () => {
   return (
     <main className="home-main">
-      <h2 style={{ textAlign: "center" }}>Carrossel a construir</h2>
+      <Carosel />
     </main>
   );
 };

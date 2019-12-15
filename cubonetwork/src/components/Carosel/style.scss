@@ -1,5 +1,16 @@
 .carousel__container {
-  display: inline-flex;
-  width: 100%;
-  overflow: hidden;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+.carousel__container .slick-arrow {
+  z-index: 9000;
+}
+
+.carousel__container .slick-prev {
+  left: 20px;
+}
+
+.carousel__container .slick-next {
+  right: 20px;
 }
