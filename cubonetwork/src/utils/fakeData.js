@@ -30,12 +30,14 @@ export const services = () => [
 
 export const carouselData = [
   {
+    id: 1,
     title: " 1",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     order: "first"
   },
   {
+    id: 2,
     title: " 2",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
