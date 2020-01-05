@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "ciclic/package.json",
+        "cubonetwork/package.json",
+        "testeForm/package.json"
+      ]
+    }
+  }
+}
