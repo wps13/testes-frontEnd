@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "echarts": "^4.2.1",
     "echarts-for-react": "^2.0.15-beta.0",
     "jest-dom": "^3.4.0",
@@ -11,11 +11,12 @@
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8",
+    "react-scripts": "3.3.0",
     "react-slick": "^0.25.2",
     "redux": "^4.0.1",
     "redux-saga": "^1.0.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "snyk": "^1.305.0"
   },
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js --open --hot",
@@ -27,7 +28,9 @@
     "lint": "eslint ./src/**/**.js",
     "lint:fix": "eslint ./src/**/**.js --fix",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -92,5 +95,6 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
-  }
+  },
+  "snyk": true
 }
