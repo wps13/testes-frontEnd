@@ -11,13 +11,16 @@
     "react-redux": "^6.0.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.1",
-    "redux-saga": "^1.0.1"
+    "redux-saga": "^1.0.1",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,5 +49,6 @@
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
-  }
+  },
+  "snyk": true
 }
